@@ -1,6 +1,16 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import Navigation from '@/Components/Navigation/Navigation';
+import Search from '@/Components/Search/Search';
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
+import { useState } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  const [showSearch, setShowSearch] = useState(false);
+  return (
+    <div>
+      {!showSearch ? null : <Search setShowSearch={setShowSearch} />}
+      <Navigation setShowSearch={setShowSearch} />
+      <Component {...pageProps} />
+    </div>
+  );
 }
