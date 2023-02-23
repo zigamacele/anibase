@@ -49,7 +49,7 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
   }
   return (
     <div
-      className="absolute bg-zinc-900 h-screen w-screen bg-opacity-70"
+      className="absolute bg-zinc-900 h-screen w-screen bg-opacity-90 z-30"
       onClick={handleCloseSearch}
     >
       <div className="flex flex-col gap-1 absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-zinc-400">
@@ -74,7 +74,7 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
         </p>
       </div>
       <div
-        className="absolute flex gap-14 justify-center top-[32em] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
+        className="absolute flex gap-14 justify-center top-[30em] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
         onClick={(e) => e.stopPropagation()}
       >
         {animeSearch.length === 0 && !loading ? null : (
@@ -102,3 +102,6 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
     </div>
   );
 }
+
+//FIXME search for zenki/megumin
+//TODO No Results

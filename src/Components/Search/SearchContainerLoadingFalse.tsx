@@ -1,5 +1,6 @@
 import { PlusCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export default function SearchContainerLoadingFalse({
@@ -39,11 +40,15 @@ export default function SearchContainerLoadingFalse({
           </div>
         );
       })}
-      <button className="self-center pt-2 pb-3 px-4 text-zinc-300 hover:text-zinc-100 hover:bg-amber-600 rounded-br rounded-bl w-96 text-xs font-light">
-        View all {title.toLowerCase()} results
-      </button>
+      <Link href="/Browse">
+        <button className="self-center pt-2 pb-3 px-4 text-zinc-300 hover:text-zinc-100 hover:bg-amber-600 rounded-br rounded-bl w-96 text-xs font-light">
+          View all {title === 'Characters' ? 'character' : title.toLowerCase()}{' '}
+          results
+        </button>
+      </Link>
     </div>
   );
 }
 
 //TODO on anime click go to :slug
+//TODO when clicking on "view all results" or "searched item" close search window
