@@ -44,7 +44,7 @@ export default function DisplayAnime() {
   return (
     <section className="self-center flex flex-col text-zinc-300 gap-12">
       <div className="flex flex-col gap-1 hover:text-zinc-100 transition-colors">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mx-8">
           <summary className="list-none font-medium">
             POPULAR THIS SEASON
           </summary>
@@ -59,8 +59,8 @@ export default function DisplayAnime() {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <div className="flex justify-between items-center">
-          <summary className="list-none font-medium ">
+        <div className="flex justify-between items-center mx-8">
+          <summary className="list-none font-medium">
             UPCOMING NEXT SEASON
           </summary>
           <Link href="/Browse">
@@ -74,7 +74,7 @@ export default function DisplayAnime() {
         />
       </div>
       <div className="flex flex-col gap-1">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mx-8">
           <summary className="list-none font-medium ">ALL TIME POPULAR</summary>
           <Link href="/Browse">
             <button className="text-xs">View All</button>
@@ -89,5 +89,3 @@ export default function DisplayAnime() {
     </section>
   );
 }
-
-//FIXME center

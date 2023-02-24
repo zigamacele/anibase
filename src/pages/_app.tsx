@@ -1,3 +1,4 @@
+import Footer from '@/Components/Footer/Footer';
 import Navigation from '@/Components/Navigation/Navigation';
 import Search from '@/Components/Search/Search';
 import '@/styles/globals.css';
@@ -11,8 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
       {!showSearch ? null : <Search setShowSearch={setShowSearch} />}
       <Navigation setShowSearch={setShowSearch} />
       <Component {...pageProps} />
+      <Footer />
     </div>
   );
 }
-
-//TODO FOOTER

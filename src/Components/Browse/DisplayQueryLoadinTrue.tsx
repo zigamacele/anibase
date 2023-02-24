@@ -18,7 +18,7 @@ export default function DisplayQueryLoadinFalse({ index }: { index: any }) {
   return (
     <div>
       <section className="flex justify-center mt-4 ">
-        <div className="flex justify-center w-[74em] flex-wrap gap-5 items-center">
+        <div className="flex justify-center w-[80em] flex-wrap gap-8 items-center">
           {[...Array(numOfCopies)].map((x, index) => (
             <Component key={index} />
           ))}

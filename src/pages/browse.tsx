@@ -9,7 +9,7 @@ export default function Browse() {
   const [queryParameters, setQueryParameters] = useState([]);
 
   return (
-    <div className="mt-10">
+    <div className="mt-12">
       <BrowseSearch
         setLoading={setLoading}
         setAPIResponse={setAPIResponse}

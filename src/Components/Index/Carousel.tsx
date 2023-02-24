@@ -20,6 +20,7 @@ export default function This() {
         autoplay
         className="h-[30em] w-[70em] text-zinc-200"
         afterChange={(slide) => setCurrentSlide(slide)}
+        effect="fade"
       >
         <div className="bg-carousel-1 bg-bottom bg-cover object-cover h-[30em] w-[70em] relative rounded-md">
           <div className=" absolute left-64 top-[11.5em] z-10">
@@ -76,7 +77,7 @@ export default function This() {
                   <span className="font-bold">Ranked:</span> #3405
                 </p>
                 <p>
-                  <span className="font-bold">Popularity:</span> #1234
+                  <span className="font-bold">Popularity:</span> #234
                 </p>
                 <p>
                   <span className="font-bold">Members:</span> #12,827

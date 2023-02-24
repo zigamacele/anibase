@@ -12,7 +12,7 @@ export default function SearchContainer({
   title: any;
 }) {
   return (
-    <section>
+    <section className="h-[38em]">
       <summary className="list-none mb-1 font-medium text-sm">{title}</summary>
       {loading ? (
         <SearchContainerLoadingTrue />

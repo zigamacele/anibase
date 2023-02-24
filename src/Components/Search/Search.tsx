@@ -103,5 +103,4 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
   );
 }
 
-//FIXME search for zenki/megumin
 //TODO No Results

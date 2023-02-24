@@ -50,6 +50,7 @@ export default function BrowseSearch({
         rating: selectedRating.id,
         type: selectedType.id,
         order_by: selectedOrder.id,
+        sort: 'desc',
         limit: 24,
       });
       setAPIResponse(response.data);
