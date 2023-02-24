@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { Carousel } from 'antd';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function This() {
@@ -23,12 +24,17 @@ export default function This() {
         effect="fade"
       >
         <div className="bg-carousel-1 bg-bottom bg-cover object-cover h-[30em] w-[70em] relative rounded-md">
-          <div className=" absolute left-64 top-[11.5em] z-10">
-            <summary className="text-2xl font-bold">
-              Vinland Saga Season 2
-            </summary>
-            <p className="text-xs">ヴィンランド・サガ SEASON2</p>
-          </div>
+          <Link
+            href={`/anime/49387`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <div className=" absolute left-64 top-[11.5em] z-10">
+              <summary className="text-2xl font-bold">
+                Vinland Saga Season 2
+              </summary>
+              <p className="text-xs">ヴィンランド・サガ SEASON2</p>
+            </div>
+          </Link>
           <div className="absolute left-64 top-[17.5em] z-10 flex flex-col gap-3 ">
             <div className="flex justify-between mr-6">
               <p className="text-xl font-bold">Synopsis</p>
@@ -54,21 +60,28 @@ export default function This() {
               slave.
             </p>
           </div>
-          <img
-            alt="Vinland Saga Season 2"
-            src="https://i.imgur.com/ah7dCsr.jpeg"
-            className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
-          />
+          <Link href={`/anime/49387`} className="cursor-pointer">
+            <img
+              alt="Vinland Saga Season 2"
+              src="https://i.imgur.com/ah7dCsr.jpeg"
+              className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
+            />
+          </Link>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-[30em] opacity-50 rounded-md"></div>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-48 rounded-b-md"></div>
         </div>
         <div className="bg-carousel-2 bg-bottom bg-cover object-cover h-[30em] w-[70em] relative rounded-md">
-          <div className=" absolute left-64 top-[11.5em] z-10">
-            <summary className="text-2xl font-bold">
-              NieR:Automata Ver1.1a
-            </summary>
-            <p className="text-xs">ニーア オートマタ</p>
-          </div>
+          <Link
+            href={`/anime/51105`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <div className=" absolute left-64 top-[11.5em] z-10">
+              <summary className="text-2xl font-bold">
+                NieR:Automata Ver1.1a
+              </summary>
+              <p className="text-xs">ニーア オートマタ</p>
+            </div>
+          </Link>
           <div className="absolute left-64 top-[17.5em] z-10 flex flex-col gap-3 ">
             <div className="flex justify-between  mr-6">
               <p className="text-xl font-bold">Synopsis</p>
@@ -90,21 +103,31 @@ export default function This() {
               moon and build androids to retake Earth.
             </p>
           </div>
-          <img
-            alt="NieR:Automata Ver1.1a"
-            src="https://i.imgur.com/dnvH7P1.jpeg"
-            className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
-          />
+          <Link
+            href={`/anime/51105`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <img
+              alt="NieR:Automata Ver1.1a"
+              src="https://i.imgur.com/dnvH7P1.jpeg"
+              className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
+            />
+          </Link>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-[30em] opacity-50 rounded-md"></div>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-48 rounded-b-md"></div>
         </div>
         <div className="bg-carousel-3 bg-bottom bg-cover object-cover h-[30em] w-[70em] relative rounded-md">
-          <div className=" absolute left-64 top-[11.5em] z-10">
-            <summary className="text-2xl font-bold">
-              Kono Subarashii Sekai ni Bakuen wo!
-            </summary>
-            <p className="text-xs">この素晴らしい世界に爆焔を！</p>
-          </div>
+          <Link
+            href={`/anime/51958`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <div className=" absolute left-64 top-[11.5em] z-10">
+              <summary className="text-2xl font-bold">
+                Kono Subarashii Sekai ni Bakuen wo!
+              </summary>
+              <p className="text-xs">この素晴らしい世界に爆焔を！</p>
+            </div>
+          </Link>
           <div className="absolute left-64 top-[17.5em] z-10 flex flex-col gap-3 ">
             <div className="flex justify-between  mr-6">
               <p className="text-xl font-bold">Synopsis</p>
@@ -130,21 +153,31 @@ export default function This() {
               convinced otherwise!
             </p>
           </div>
-          <img
-            alt="Kono Subarashii Sekai ni Bakuen wo"
-            src="https://i.imgur.com/3vGIhTh.jpeg"
-            className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
-          />
+          <Link
+            href={`/anime/51958`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <img
+              alt="Kono Subarashii Sekai ni Bakuen wo"
+              src="https://i.imgur.com/3vGIhTh.jpeg"
+              className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
+            />
+          </Link>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-[30em] opacity-50 rounded-md"></div>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-48 rounded-b-md"></div>
         </div>
         <div className="bg-carousel-4 bg-center bg-cover object-cover h-[30em] w-[70em] relative rounded-md">
-          <div className=" absolute left-64 top-[11.5em] z-10">
-            <summary className="text-2xl font-bold">
-              Shingeki no Kyojin: The Final Season - Kanketsu-hen
-            </summary>
-            <p className="text-xs">進撃の巨人 The Final Season完結編 前編</p>
-          </div>
+          <Link
+            href={`/anime/51535`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <div className=" absolute left-64 top-[11.5em] z-10">
+              <summary className="text-2xl font-bold">
+                Shingeki no Kyojin: The Final Season - Kanketsu-hen
+              </summary>
+              <p className="text-xs">進撃の巨人 The Final Season完結編 前編</p>
+            </div>
+          </Link>
           <div className="absolute left-64 top-[17.5em] z-10 flex flex-col gap-3 ">
             <div className="flex justify-between  mr-6">
               <p className="text-xl font-bold">Synopsis</p>
@@ -170,11 +203,16 @@ export default function This() {
               own?
             </p>
           </div>
-          <img
-            alt="Shingeki no Kyojin"
-            src="https://i.imgur.com/Zp4dCMI.jpeg"
-            className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
-          />
+          <Link
+            href={`/anime/51535`}
+            className="cursor-pointer hover:text-amber-500"
+          >
+            <img
+              alt="Shingeki no Kyojin"
+              src="https://i.imgur.com/Zp4dCMI.jpeg"
+              className="absolute z-10 rounded-lg h-[20em] left-7 top-28 drop-shadow-md"
+            />
+          </Link>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-[30em] opacity-50 rounded-md"></div>
           <div className="absolute bg-zinc-800 bottom-0 w-[70em] h-48 rounded-b-md"></div>
         </div>

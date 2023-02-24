@@ -49,7 +49,7 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
   }
   return (
     <div
-      className="absolute bg-zinc-900 h-screen w-screen bg-opacity-80 z-30"
+      className="fixed bg-zinc-900 h-full w-full bg-opacity-80 z-30 overflow-hidden"
       onClick={handleCloseSearch}
     >
       <div className="flex flex-col gap-1 absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-zinc-400">
@@ -78,25 +78,31 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
         onClick={(e) => e.stopPropagation()}
       >
         {animeSearch.length === 0 && !loading ? null : (
-          <SearchContainer
-            animeSearch={animeSearch}
-            loading={loading}
-            title={'Anime'}
-          />
+          <div onClick={handleCloseSearch}>
+            <SearchContainer
+              animeSearch={animeSearch}
+              loading={loading}
+              title={'Anime'}
+            />
+          </div>
         )}
         {mangaSearch.length === 0 && !loading ? null : (
-          <SearchContainer
-            animeSearch={mangaSearch}
-            loading={loading}
-            title={'Manga'}
-          />
+          <div className="cursor-not-allowed">
+            <SearchContainer
+              animeSearch={mangaSearch}
+              loading={loading}
+              title={'Manga'}
+            />
+          </div>
         )}
         {charactersSearch.length === 0 && !loading ? null : (
-          <SearchContainer
-            animeSearch={charactersSearch}
-            loading={loading}
-            title={'Characters'}
-          />
+          <div className="cursor-not-allowed">
+            <SearchContainer
+              animeSearch={charactersSearch}
+              loading={loading}
+              title={'Characters'}
+            />
+          </div>
         )}
       </div>
     </div>
@@ -104,3 +110,4 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
 }
 
 //TODO No Results
+//FIXME add cursor not allowed on manga and cheracters

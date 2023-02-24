@@ -14,30 +14,32 @@ export default function SearchContainerLoadingFalse({
     <div className="flex flex-col bg-zinc-700 w-96 rounded">
       {animeSearch.map((anime: any) => {
         return (
-          <div
-            key={anime.mal_id}
-            className="flex justify-between group hover:bg-amber-600 rounded items-center text-zinc-300 hover:text-zinc-100 py-2 px-4"
-          >
-            <div className="flex items-center gap-2">
-              <Image
-                src={anime.images.webp.image_url}
-                alt={anime.mal_id}
-                width={100}
-                height={100}
-                className="rounded w-10 h-10 object-cover"
-              />
-              <div className="flex flex-col font-medium text-sm w-60">
-                <p className="truncate text-ellipsis">
-                  {anime.title || anime.name}
-                </p>
-                <div className="flex gap-1 font-light">
-                  <p>{anime.year || anime.name_kanji}</p>
-                  <p>{anime.type}</p>
+          <Link key={anime.mal_id} href={`/anime/${anime.mal_id}`}>
+            <div
+              key={anime.mal_id}
+              className="flex justify-between group hover:bg-amber-600 rounded items-center text-zinc-300 hover:text-zinc-100 py-2 px-4"
+            >
+              <div className="flex items-center gap-2">
+                <Image
+                  src={anime.images.webp.image_url}
+                  alt={anime.mal_id}
+                  width={100}
+                  height={100}
+                  className="rounded w-10 h-10 object-cover"
+                />
+                <div className="flex flex-col font-medium text-sm w-60">
+                  <p className="truncate text-ellipsis">
+                    {anime.title || anime.name}
+                  </p>
+                  <div className="flex gap-1 font-light">
+                    <p>{anime.year || anime.name_kanji}</p>
+                    <p>{anime.type}</p>
+                  </div>
                 </div>
               </div>
+              <PlusCircleIcon className="h-6 w-6 hidden group-hover:block cursor-not-allowed" />
             </div>
-            <PlusCircleIcon className="h-6 w-6 hidden group-hover:block cursor-not-allowed" />
-          </div>
+          </Link>
         );
       })}
       <Link href="/Browse">
@@ -51,4 +53,4 @@ export default function SearchContainerLoadingFalse({
 }
 
 //TODO on anime click go to :slug
-//TODO when clicking on "view all results" or "searched item" close search window
+//TODO close search on click
