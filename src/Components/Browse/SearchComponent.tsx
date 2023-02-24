@@ -1,5 +1,4 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
-import { useState } from 'react';
 
 export default function SearchComponent({
   userInput,

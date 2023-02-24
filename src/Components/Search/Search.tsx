@@ -49,7 +49,7 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
   }
   return (
     <div
-      className="absolute bg-zinc-900 h-screen w-screen bg-opacity-90 z-30"
+      className="absolute bg-zinc-900 h-screen w-screen bg-opacity-80 z-30"
       onClick={handleCloseSearch}
     >
       <div className="flex flex-col gap-1 absolute top-28 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-zinc-400">

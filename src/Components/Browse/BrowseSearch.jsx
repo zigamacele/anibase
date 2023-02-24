@@ -37,7 +37,7 @@ export default function BrowseSearch({
     setLoading(true);
     const delayDebounce = setTimeout(() => {
       handleInputChange();
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(delayDebounce);
   }, [userInput, selectedGenre, selectedType, selectedRating, selectedOrder]);
@@ -50,7 +50,7 @@ export default function BrowseSearch({
         rating: selectedRating.id,
         type: selectedType.id,
         order_by: selectedOrder.id,
-        limit: 30,
+        limit: 24,
       });
       setAPIResponse(response.data);
       gatherQueryParameters();

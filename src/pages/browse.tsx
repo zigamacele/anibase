@@ -16,7 +16,11 @@ export default function Browse() {
         setQueryParameters={setQueryParameters}
       />
       <DisplayTags queryParameters={queryParameters} />
-      <DisplayQuery loading={loading} APIResponse={APIResponse} />
+      <DisplayQuery
+        loading={loading}
+        APIResponse={APIResponse}
+        index={'browse'}
+      />
     </div>
   );
 }
