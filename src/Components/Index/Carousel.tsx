@@ -220,5 +220,3 @@ export default function This() {
     </div>
   );
 }
-
-//TODO if you click on displayed slide go to slug

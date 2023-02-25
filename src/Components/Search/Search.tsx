@@ -109,5 +109,5 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
   );
 }
 
-//TODO No Results
+//TODO remove manga and characters section somehow
 //FIXME add cursor not allowed on manga and cheracters

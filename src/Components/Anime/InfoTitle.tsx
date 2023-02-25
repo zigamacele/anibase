@@ -9,10 +9,11 @@ export default function InfoTitle({ APIResponse }: { APIResponse: any }) {
         <div className="flex flex-col gap-3">
           <Image
             src={APIResponse.images.webp.large_image_url}
-            alt={APIResponse.title}
+            alt={APIResponse.title + '-title'}
             width={200}
             height={200}
-            className="rounded"
+            className="w-[13.5em] h-[19em] object-cover rounded"
+            priority={true}
           />
           <div className="flex items-center justify-between cursor-not-allowed">
             <div className="flex items-center gap-6 bg-amber-500 py-1.5 px-2 rounded">
@@ -24,10 +25,10 @@ export default function InfoTitle({ APIResponse }: { APIResponse: any }) {
         </div>
 
         <div className=" flex flex-col justify-between gap-2">
-          <div className="mt-[13em]">
+          <div className="mt-[15em]">
             <p className="text-lg">{APIResponse.title}</p>
             <p className="text-sm text text-zinc-400  w-[50em] text-ellipsis h-[6em] overflow-hidden">
-              {APIResponse.background}
+              {APIResponse.background || 'No Synopsis Available'}
             </p>
           </div>
         </div>

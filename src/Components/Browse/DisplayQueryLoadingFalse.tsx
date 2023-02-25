@@ -3,21 +3,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+export function firstLetterUppercase(string: string) {
+  if (!string) return 'Unknown';
+  const capitalizedWord = string.split('').map((letter, index) => {
+    if (index === 0) return letter.toUpperCase();
+    else return letter;
+  });
+
+  return capitalizedWord;
+}
+
 export default function DisplayQueryLoadingFalse({
   APIResponse,
 }: {
   APIResponse: any;
 }) {
-  function firstLetterUppercase(string: string) {
-    if (!string) return 'Unknown';
-    const capitalizedWord = string.split('').map((letter, index) => {
-      if (index === 0) return letter.toUpperCase();
-      else return letter;
-    });
-
-    return capitalizedWord;
-  }
-
   return (
     <section className="flex justify-center items-center mt-4 ">
       <div className="flex justify-center w-[80em] flex-wrap gap-8 items-center">
