@@ -25,7 +25,7 @@ export default function Navigation({ setShowSearch }: { setShowSearch: any }) {
         <button className="opacity-40 cursor-not-allowed">Anime</button>
         <button className="opacity-40 cursor-not-allowed">Manga</button>
         <Link
-          href="/Browse"
+          href="/browse"
           className="hover:text-amber-600 hover:animate-pulse"
         >
           Browse

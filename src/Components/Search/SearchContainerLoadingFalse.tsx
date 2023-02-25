@@ -42,7 +42,7 @@ export default function SearchContainerLoadingFalse({
           </Link>
         );
       })}
-      <Link href="/Browse">
+      <Link href="/browse">
         <button className="self-center pt-2 pb-3 px-4 text-zinc-300 hover:text-zinc-100 hover:bg-amber-600 rounded-br rounded-bl w-96 text-xs font-light">
           View all {title === 'Characters' ? 'character' : title.toLowerCase()}{' '}
           results
