@@ -8,7 +8,7 @@ function Component() {
   );
 }
 
-export default function StaffTrue({ number }) {
+export default function StaffTrue({ number }: { number: any }) {
   return (
     <div className="mt-4">
       <p className="h-2 rounded-full w-40 bg-zinc-700 animate-pulse"></p>

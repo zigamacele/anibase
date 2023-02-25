@@ -56,7 +56,7 @@ export default function ComboBox({
                   Nothing found.
                 </div>
               ) : (
-                filteredPeople.map((person) => (
+                filteredPeople.map((person: any) => (
                   <Combobox.Option
                     key={person.id}
                     className={({ active }) =>

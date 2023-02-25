@@ -1,6 +1,7 @@
 import DisplayAnime from '@/Components/Anime/DisplayAnime';
 import DisplayAnimeLoadingTrue from '@/Components/Anime/DisplayAnimeLoadingTrue';
 import { Jakan } from 'jakan';
+import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
@@ -26,8 +27,6 @@ export default function AnimePage() {
     const responseChar = await jakan.anime(Number(id), 'characters');
     const responseStaff = await jakan.anime(Number(id), 'staff');
 
-    console.log(response);
-
     setAPIStaff(responseStaff.data);
     setAPIChar(responseChar.data);
     setAPIResponse(response.data);
@@ -35,15 +34,20 @@ export default function AnimePage() {
   }
   return (
     <div>
-      {loading ? (
-        <DisplayAnimeLoadingTrue />
-      ) : (
-        <DisplayAnime
-          APIResponse={APIResponse}
-          APIChar={APIChar}
-          APIStaff={APIStaff}
-        />
-      )}
+      <Head>
+        <title>AniBase</title>
+      </Head>
+      <div>
+        {loading ? (
+          <DisplayAnimeLoadingTrue />
+        ) : (
+          <DisplayAnime
+            APIResponse={APIResponse}
+            APIChar={APIChar}
+            APIStaff={APIStaff}
+          />
+        )}
+      </div>
     </div>
   );
 }

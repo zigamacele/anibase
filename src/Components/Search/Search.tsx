@@ -31,17 +31,17 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
         q: searchInput,
         limit: 10,
       });
-      const responseManga: any = await jakan.manga({
-        q: searchInput,
-        limit: 10,
-      });
-      const responseCharacters: any = await jakan.characters({
-        q: searchInput,
-        limit: 10,
-      });
+      // const responseManga: any = await jakan.manga({
+      //   q: searchInput,
+      //   limit: 10,
+      // });
+      // const responseCharacters: any = await jakan.characters({
+      //   q: searchInput,
+      //   limit: 10,
+      // });
       setAnimeSearch(responseAnime.data);
-      setMangaSearch(responseManga.data);
-      setCharactersSearch(responseCharacters.data);
+      // setMangaSearch(responseManga.data);
+      // setCharactersSearch(responseCharacters.data);
       setLoading(false);
     } catch (error) {
       console.log(error);
@@ -77,21 +77,21 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
         className="absolute flex gap-14 justify-center top-[30em] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50"
         onClick={(e) => e.stopPropagation()}
       >
-        {animeSearch.length === 0 && !loading ? null : (
-          <div onClick={handleCloseSearch}>
-            <SearchContainer
-              animeSearch={animeSearch}
-              loading={loading}
-              title={'Anime'}
-            />
-          </div>
-        )}
         {mangaSearch.length === 0 && !loading ? null : (
           <div className="cursor-not-allowed">
             <SearchContainer
               animeSearch={mangaSearch}
               loading={loading}
               title={'Manga'}
+            />
+          </div>
+        )}
+        {animeSearch.length === 0 && !loading ? null : (
+          <div onClick={handleCloseSearch}>
+            <SearchContainer
+              animeSearch={animeSearch}
+              loading={loading}
+              title={'Anime'}
             />
           </div>
         )}
@@ -108,6 +108,3 @@ export default function Search({ setShowSearch }: { setShowSearch: any }) {
     </div>
   );
 }
-
-//TODO remove manga and characters section somehow
-//FIXME add cursor not allowed on manga and cheracters

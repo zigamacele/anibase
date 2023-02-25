@@ -10,11 +10,11 @@ export default function APIData({ APIResponse }: { APIResponse: any }) {
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Episodes</p>
-        <p className="text-zinc-400">{APIResponse.episodes}</p>
+        <p className="text-zinc-400">{APIResponse.episodes || 'Unknown'}</p>
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Duration</p>
-        <p className="text-zinc-400">{APIResponse.duration}</p>
+        <p className="text-zinc-400">{APIResponse.duration || 'Unknown'}</p>
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Status</p>
@@ -36,11 +36,11 @@ export default function APIData({ APIResponse }: { APIResponse: any }) {
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Score</p>
-        <p className="text-zinc-400">{APIResponse.score}</p>
+        <p className="text-zinc-400">{APIResponse.score || 'Unknown'}</p>
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Scored By</p>
-        <p className="text-zinc-400">{APIResponse.scored_by}</p>
+        <p className="text-zinc-400">{APIResponse.scored_by || 'Unknown'}</p>
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Members</p>
@@ -48,7 +48,7 @@ export default function APIData({ APIResponse }: { APIResponse: any }) {
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Rank</p>
-        <p className="text-zinc-400">{APIResponse.rank}</p>
+        <p className="text-zinc-400">{APIResponse.rank || 'Unknown'}</p>
       </div>
       <div className="flex flex-col text-xs gap-1">
         <p className="font-medium text-sm">Popularity</p>

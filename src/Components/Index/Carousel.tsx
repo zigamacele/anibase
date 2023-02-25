@@ -51,13 +51,13 @@ export default function This() {
               </div>
             </div>
             <p className="font-light text-sm mr-6 text-zinc-400">
-              After his father's death and the destruction of his village at the
-              hands of English raiders, Einar wishes for a peaceful life with
-              his family on their newly rebuilt farms. However, fate has other
-              plans: his village is invaded once again. Einar watches helplessly
-              as the marauding Danes burn his lands and slaughter his family.
-              The invaders capture Einar and take him back to Denmark as a
-              slave.
+              After his father&apos;s death and the destruction of his village
+              at the hands of English raiders, Einar wishes for a peaceful life
+              with his family on their newly rebuilt farms. However, fate has
+              other plans: his village is invaded once again. Einar watches
+              helplessly as the marauding Danes burn his lands and slaughter his
+              family. The invaders capture Einar and take him back to Denmark as
+              a slave.
             </p>
           </div>
           <Link href={`/anime/49387`} className="cursor-pointer">
@@ -145,12 +145,12 @@ export default function This() {
             </div>
             <p className="font-light text-sm mr-6 text-zinc-400">
               Crimson Magic Clan members Megumin and Yunyun are at the top of
-              their class, but they still have a lot to learn. Yunyun's begun
-              learning advanced magic, but Megumin has gone down a different
-              path-the path of explosion magic! Despite being warned of its
-              limited usefulness, Megumin believes explosion magic is the way
-              for her to become a great, voluptuous wizard, and she won't be
-              convinced otherwise!
+              their class, but they still have a lot to learn. Yunyun&apos;s
+              begun learning advanced magic, but Megumin has gone down a
+              different path-the path of explosion magic! Despite being warned
+              of its limited usefulness, Megumin believes explosion magic is the
+              way for her to become a great, voluptuous wizard, and she
+              won&apos;t be convinced otherwise!
             </p>
           </div>
           <Link
@@ -197,10 +197,10 @@ export default function This() {
               The war for Paradis zeroes in on Shiganshina just as Jaegerists
               have seized control. After taking a huge blow from a surprise
               attack led by Eren, Marley swiftly acts to return the favor. With
-              Zeke's true plan revealed and a military forced under new rule,
-              this battle might be fought on two fronts. Does Eren intend on
-              fulfilling his half-brother's wishes or does he have a plan of his
-              own?
+              Zeke&apos;s true plan revealed and a military forced under new
+              rule, this battle might be fought on two fronts. Does Eren intend
+              on fulfilling his half-brother&apos;s wishes or does he have a
+              plan of his own?
             </p>
           </div>
           <Link

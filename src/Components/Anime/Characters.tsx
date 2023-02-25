@@ -34,7 +34,9 @@ export default function Characters({ APIChar }: { APIChar: any }) {
                       <p className="truncete text-clip w-20 h-10">
                         {character.voice_actors[0].person.name}
                       </p>
-                      <p>{character.voice_actors[0].language}</p>
+                      <p className="truncete w-20 overflow-hidden">
+                        {character.voice_actors[0].language}
+                      </p>
                     </div>
 
                     <Image

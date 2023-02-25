@@ -51,6 +51,3 @@ export default function SearchContainerLoadingFalse({
     </div>
   );
 }
-
-//TODO on anime click go to :slug
-//TODO close search on click
