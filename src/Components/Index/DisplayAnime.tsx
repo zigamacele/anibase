@@ -48,7 +48,7 @@ export default function DisplayAnime() {
           <summary className="list-none font-medium">
             POPULAR THIS SEASON
           </summary>
-          <Link href="/Browse">
+          <Link href="/browse">
             <div className="text-xs">View All</div>
           </Link>
         </div>
@@ -63,7 +63,7 @@ export default function DisplayAnime() {
           <summary className="list-none font-medium">
             UPCOMING NEXT SEASON
           </summary>
-          <Link href="/Browse">
+          <Link href="/browse">
             <button className="text-xs">View All</button>
           </Link>
         </div>
@@ -76,7 +76,7 @@ export default function DisplayAnime() {
       <div className="flex flex-col gap-1">
         <div className="flex justify-between items-center mx-8">
           <summary className="list-none font-medium ">ALL TIME POPULAR</summary>
-          <Link href="/Browse">
+          <Link href="/browse">
             <button className="text-xs">View All</button>
           </Link>
         </div>
